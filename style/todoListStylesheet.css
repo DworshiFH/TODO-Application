@@ -1,0 +1,54 @@
+.input_container_element {
+    display: block;
+    width: 380px;
+}
+
+p{
+    width: 380px;
+}
+
+#task_due_time_input{
+    width: 210px;
+}
+
+.button {
+    white-space: normal;
+    color: rgba(255, 255, 255);
+    padding: 10px;
+    background-color: rgba(37, 99, 235);
+    border-color: rgba(37, 99, 235);
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+divLabel{
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+details{
+    border: 1px solid black;
+    padding: 3px;
+    margin-bottom: 2px;
+    width: 380px;
+}
+
+@media only screen and (max-width: 400px) {
+    p{
+        width: 99%;
+    }
+    .input_container_element{
+        width: 97%;
+    }
+    #task_due_time_input{
+        width: 97%;
+    }
+    .button{
+        width: 99%;
+    }
+    details{
+        width: 99%;
+    }
+}

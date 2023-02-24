@@ -5,7 +5,6 @@ html_task_container = Element("tasks_container")
 html_task_input = Element("task_input")
 html_debug_out = Element("debug_out")
 
-
 def add_task():
     # if input value greater 0, execute. If 0 (false), string is empty, don't execute
     if html_task_input.element.value:

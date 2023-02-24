@@ -1,11 +1,14 @@
 let id_increment = 0
 
-let html_task_container = document.getElementById("tasks_container-container")
+let html_task_container = document.getElementById("tasks_container")
 let html_task_input = document.getElementById("task_input")
 let html_debug_out = document.getElementById("debug_out")
 
+
+
 function add_task(){
     // if input value length greater 0, execute. If 0, string is empty, interpreted as false
+    console.log("here?")
     if(html_task_input.value){
         //element definition
         let new_task = document.createElement("div")

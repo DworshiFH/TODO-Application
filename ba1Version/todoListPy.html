@@ -14,25 +14,23 @@
 <py-script src = "./todoList.py"></py-script>
 
 <main>
-  <section>
-    <h1>TODO</h1>
-    <div>
-      <input id="task_input" class="py-input" type="text">
-      <button id="add_task_btn" class="py-button" py-click="add_task()">
-        Add task
-      </button>
+  <h1>TODO</h1>
+  <div>
+    <input id="task_input" class="py-input" type="text">
+    <button id="add_task_btn" class="py-button" py-click="add_task()">
+      Add task
+    </button>
+  </div>
+
+  <div id="tasks_container"></div>
+
+  <template id="task_template">
+    <div class="task py-li-element">
+      <label><input type="checkbox"></label>
+      <p></p>
     </div>
+  </template>
 
-    <div id="tasks_container"></div>
-
-    <template id="task_template">
-      <div class="task py-li-element">
-        <label><input type="checkbox"></label>
-        <p></p>
-      </div>
-    </template>
-
-  </section>
   <section>
     <div id = "debug_out"></div>
   </section>

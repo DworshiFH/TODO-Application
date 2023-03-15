@@ -7,22 +7,20 @@
   <title>TODO Application</title>
   <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
   <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <py-script src = "./todoList.py"></py-script>
 </head>
 
-<body id = "container">
-
-<py-script src = "./todoList.py"></py-script>
-
-<main>
+<body>
   <h1>TODO</h1>
-  <div>
-    <input id="task_input" class="py-input" type="text">
+  <div id = "input_container">
+    <label for="task_input" >Task: </label>
+    <input onmousemove id="task_input" class="py-input" type="text">
     <button id="add_task_btn" class="py-button" py-click="add_task()">
       Add task
     </button>
   </div>
 
-  <div id="tasks_container"></div>
+  <div id="task_container"></div>
 
   <template id="task_template">
     <div class="task py-li-element">
@@ -30,10 +28,5 @@
       <p></p>
     </div>
   </template>
-
-  <section>
-    <div id = "debug_out"></div>
-  </section>
-</main>
 </body>
 </html>

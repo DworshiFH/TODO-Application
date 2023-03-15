@@ -14,21 +14,21 @@ if(!isset($_SESSION['user_id'])) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 
     <py-config>
         [[fetch]]
         files = ["/utils.py"]
     </py-config>
 
-    <link rel="stylesheet" href="style/todoListStylesheet.css"
+    <link rel="stylesheet" href="style/todoListStylesheet.css">
+
+    <py-script src = "scripts/todoList.py"></py-script>
 
 </head>
 
 <body id = "body">
-
-<py-script src = "scripts/todoList.py"></py-script>
 
 <main>
     <h2 id = "header">TODO-Application</h2>
@@ -78,5 +78,7 @@ if(!isset($_SESSION['user_id'])) {
         <br class = "br_template">
     </template>
 </main>
+
+
 </body>
 </html>

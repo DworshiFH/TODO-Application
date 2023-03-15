@@ -123,12 +123,15 @@ def generate_task(task_id, task, task_note, is_completed, task_due_time):
             new_task_html_summary.element.classList.add("line-through")
             new_task_html_note.element.classList.add("line-through")
             new_task_html_checkbox.element.checked = "true"
+            # new_task_html_note.element.style = "text-decoration: line-through;"
+
         else:
             new_task_html_details.element.classList.remove("line-through")
             new_task_html_due.element.classList.remove("line-through")
             new_task_html_summary.element.classList.remove("line-through")
             new_task_html_note.element.classList.remove("line-through")
             new_task_html_checkbox.element.checked = False
+            # new_task_html_note.element.style = ""
 
     cross_out_task(is_completed)
 
